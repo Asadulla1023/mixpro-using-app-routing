@@ -1,8 +1,14 @@
+"use client"
+import styles from "@/styles/container.module.css"
 import React from 'react'
 
-const Container = () => {
+interface Children {
+  children: React.ReactNode
+}
+
+const Container = ({ children }: Children) => {
   return (
-    <div>Container</div>
+    <div className={styles.container}>{children}</div>
   )
 }
 

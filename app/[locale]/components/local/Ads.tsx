@@ -24,6 +24,7 @@ import Link from "next/link";
 const Ads = () => {
   const t = useTranslations();
   const path = usePathname();
+
   return (
     <Container>
       <Swiper
@@ -39,8 +40,7 @@ const Ads = () => {
           ? ADS_RU.map((e: ICard, index) => {
               return (
                 <SwiperSlide key={uuidv4()}>
-                  <Link href={e.url} className={styles.adsSection}>
-                    <div>
+                  <div className={styles.adsSection}>
                       <div className={styles.left}>
                         <h4>{e.manifacturer}</h4>
                         <h1>{e.title}</h1>
@@ -55,8 +55,7 @@ const Ads = () => {
                           alt="ferfr"
                         />
                       </div>
-                    </div>
-                  </Link>
+                  </div>
                 </SwiperSlide>
               );
             })

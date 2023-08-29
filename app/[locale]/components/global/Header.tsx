@@ -2,8 +2,13 @@ import React from "react";
 import styles from "@/styles/header.module.css";
 import Container from "./Container";
 import Image from "next/image";
-
+import { ADS_UZ, ADS_RU } from "@/constant";
+import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
+import ICard from "@/interfaces/ICard";
 const Header = () => {
+  const t = useTranslations();
+  const path = usePathname();
   return (
     <div className={styles.header}>
       <Container>

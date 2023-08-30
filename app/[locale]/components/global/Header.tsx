@@ -24,9 +24,9 @@ const Header = () => {
             />
           </div>
           <div className={styles.icon}>
-            <Image src={"icons/noti.svg"} width={20} height={23} alt="noti" />
-            <Image src={"icons/user.svg"} width={23} height={23} alt="noti" />
-            <Image src={"icons/cart.svg"} width={26} height={23} alt="noti" />
+            <Image src={"/icons/noti.svg"} width={20} height={23} alt="noti" />
+            <Image src={"/icons/user.svg"} width={23} height={23} alt="noti" />
+            <Image src={"/icons/cart.svg"} width={26} height={23} alt="noti" />
           </div>
         </div>
       </Container>

@@ -17,7 +17,7 @@ const TopHeader = () => {
                 <div className={styles.rightNav}>
                     <div className={styles.arrowLang}>
                         <p>UZB</p>
-                        <Image src={'icons/arrow.svg'} width={11.15} height={6.55} alt='arrow'/>
+                        <Image src={'/icons/arrow.svg'} width={11.15} height={6.55} alt='arrow'/>
                     </div>
                     <span></span>
                     <p>ORDER TRACKING</p>

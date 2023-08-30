@@ -19,21 +19,22 @@ const Ads = () => {
   const path = usePathname();
 
   return (
-    <Container>
-      <Swiper
-        loop={true}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Navigation]}
-        className="mySwiper"
-      >
-        {path === "/ru"
-          ? ADS_RU.map((e: ICard, index) => {
-              return (
-                <SwiperSlide key={uuidv4()}>
-                  <div className={styles.adsSection}>
+    <div className={styles.ads}>
+      <Container>
+        <Swiper
+          loop={true}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Navigation]}
+          className="mySwiper"
+        >
+          {path === "/ru"
+            ? ADS_RU.map((e: ICard, index) => {
+                return (
+                  <SwiperSlide key={uuidv4()}>
+                    <Link href={e.url} className={styles.adsSection}>
                       <div className={styles.left}>
                         <h4>{e.manifacturer}</h4>
                         <h1>{e.title}</h1>
@@ -48,36 +49,37 @@ const Ads = () => {
                           alt="ferfr"
                         />
                       </div>
-                  </div>
-                </SwiperSlide>
-              );
-            })
-          : ADS_UZ.map((e: ICard) => {
-              return (
-                <SwiperSlide key={uuidv4()}>
-                  <Link href={e.url} className={styles.adsSection}>
-                    <div>
-                      <div className="left">
-                        <h4>{e.manifacturer}</h4>
-                        <h1>{e.title}</h1>
-                        <p>{e.desc}</p>
-                        <button>shop now</button>
+                    </Link>
+                  </SwiperSlide>
+                );
+              })
+            : ADS_UZ.map((e: ICard) => {
+                return (
+                  <SwiperSlide key={uuidv4()}>
+                    <Link href={e.url} className={styles.adsSection}>
+                      <div>
+                        <div className="left">
+                          <h4>{e.manifacturer}</h4>
+                          <h1>{e.title}</h1>
+                          <p>{e.desc}</p>
+                          <button>shop now</button>
+                        </div>
+                        <div className="right">
+                          <Image
+                            width={643}
+                            height={643}
+                            src={e.images[0]}
+                            alt="ferfr"
+                          />
+                        </div>
                       </div>
-                      <div className="right">
-                        <Image
-                          width={643}
-                          height={643}
-                          src={e.images[0]}
-                          alt="ferfr"
-                        />
-                      </div>
-                    </div>
-                  </Link>
-                </SwiperSlide>
-              );
-            })}
-      </Swiper>
-    </Container>
+                    </Link>
+                  </SwiperSlide>
+                );
+              })}
+        </Swiper>
+      </Container>
+    </div>
   );
 };
 

@@ -8,6 +8,7 @@ import TopHeader from "./components/global/TopHeader";
 import Categories from "./components/global/Categories";
 import Footer from "./components/global/Footer";
 import Ads from "./components/local/Ads"
+import CategoryCard from "./components/global/CategoryCard";
 export default function Home() {
   const t = useTranslations();
   return (
@@ -15,9 +16,11 @@ export default function Home() {
       <TopHeader />
       <Header />
       <Categories />
+      <Ads />
+      <CategoryCard/>
       <Footer />
       <h1>{t("title")}</h1>
-      <Ads />
+
     </main>
   );
 }

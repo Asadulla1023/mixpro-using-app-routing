@@ -1,4 +1,11 @@
-.adsSection{
+.ads{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+}
+/* .adsSection{
     display: flex;
     justify-content: space-between;
 }
@@ -21,5 +28,8 @@
     font-size: 15px;
     font-weight: 400;
     line-height: 23px;
-
-}
+    width: 610px;
+    height: 69px;
+    top: 330px;
+    
+} */

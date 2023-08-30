@@ -17,16 +17,16 @@ const Header = () => {
           <div className={styles.search}>
             <input type="text" placeholder="search" />
             <Image
-              src="icon/search.svg"
+              src="/icons/search.svg"
               alt="search icon"
               width={22}
               height={22}
             />
           </div>
           <div className={styles.icon}>
-            <Image src={"icon/noti.svg"} width={20} height={23} alt="noti" />
-            <Image src={"icon/user.svg"} width={23} height={23} alt="noti" />
-            <Image src={"icon/cart.svg"} width={26} height={23} alt="noti" />
+            <Image src={"icons/noti.svg"} width={20} height={23} alt="noti" />
+            <Image src={"icons/user.svg"} width={23} height={23} alt="noti" />
+            <Image src={"icons/cart.svg"} width={26} height={23} alt="noti" />
           </div>
         </div>
       </Container>

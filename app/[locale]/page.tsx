@@ -15,9 +15,9 @@ export default function Home() {
       <TopHeader />
       <Header />
       <Categories />
-      <Footer />
-      <h1>{t("title")}</h1>
       <Ads />
+      <h1>{t("title")}</h1>
+      <Footer />
     </main>
   );
 }

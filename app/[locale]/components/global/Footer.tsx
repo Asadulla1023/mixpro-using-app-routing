@@ -41,10 +41,10 @@ const Footer = () => {
           <div className={styles.connect}>
             <h1>MIXPRO</h1>
             <div className={styles.icon}>
-              <Image src={'icon/facebook.svg'} width={22} height={22} alt='facebook'/>
-              <Image src={'icon/insta.svg'} width={20} height={20} alt='facebook'/>
-              <Image src={'icon/youtube.svg'} width={20} height={14} alt='facebook'/>
-              <Image src={'icon/twitter.svg'} width={22} height={18} alt='facebook'/>
+              <Image src={'/icons/facebook.svg'} width={22} height={22} alt='facebook'/>
+              <Image src={'/icons/insta.svg'} width={20} height={20} alt='facebook'/>
+              <Image src={'/icons/youtube.svg'} width={20} height={14} alt='facebook'/>
+              <Image src={'/icons/twitter.svg'} width={22} height={18} alt='facebook'/>
             </div>
             <div className={styles.inputButton}>
               <input placeholder='ENTER YOUR EMAIL' type='text'/>

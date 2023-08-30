@@ -11,7 +11,7 @@ const Categories = () => {
                 <p>HOME</p>
                 <div className={styles.arrow}>
                     <p>SHOP</p>
-                    <Image src={'icon/arrow.svg'} width={7} height={4} alt='arrow'/>
+                    <Image src={'/icons/arrow.svg'} width={7} height={4} alt='arrow'/>
                 </div>
                 <p>BLOG</p>
                 <p>CONTACT</p>
